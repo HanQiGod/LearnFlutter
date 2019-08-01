@@ -1,61 +1,53 @@
 import 'package:flutter/material.dart';
 
-
 /**
- * Image 组件加载本地图片
  * 
- */
+ * Flutter 页面布局 Stack 层叠组件，Stack 与 Align，Stack 与 Positioned 实现定位布局
+ * 
+ * Stack 组件主要是定位布局
+ * 
+ *  */
 
+//  布局组件例子练习
 
-
-// 入口方法
 void main() => runApp(MyApp());
 
-
-// 自定义组件
 class MyApp extends StatelessWidget {
-
-  // Widget 是部件或组件，在 Flutter 中所有的东西都是组件,比如 Center、Text 都是 Widget
   @override
   Widget build(BuildContext context) {
-    // MaterialApp 组件是作为根组件来使用的
-    // Scaffold 组件修饰，可设置导航栏
+    // TODO: implement build
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Demo'),
+          title: Text('FlutterDemo'),
         ),
         body: HomeContent(),
-      ),
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
       ),
     );
   }
 }
 
-
-// 继续分离 Center 组件
+//  布局组件例子练习
 class HomeContent extends StatelessWidget {
-  
   @override
   Widget build(BuildContext context) {
+    // TODO: implement build
     return Center(
-      child: Container(
+      child: Stack(
 
-        child: Image.asset(
-          'images/a.png',
-          // fit: BoxFit.cover,
-        ),
-
-        width: 100,
-        height: 100,
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.all(
-            Radius.circular(50),
+        alignment: Alignment(1, 1),  // 同时设置 Stack 组件内所有子元素的位置
+        children: <Widget>[
+          Container(
+            width: 300,
+            height: 400,
+            color: Colors.red,
           ),
-        ),
-      )
+          Text('我是一个文本', style: TextStyle(
+            fontSize: 20,
+            color: Colors.white
+          ),),
+        ],
+      ),
     );
   }
 }
