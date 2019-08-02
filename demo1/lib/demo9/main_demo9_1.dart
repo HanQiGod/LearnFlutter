@@ -10,19 +10,21 @@ import 'package:flutter/material.dart';
 
 //  布局组件例子练习
 
-void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return MaterialApp(
-      home: Scaffold(
-        appBar: AppBar(
-          title: Text('FlutterDemo'),
-        ),
-        body: HomeContent(),
+    // 获取路由参数
+    var args = ModalRoute.of(context).settings.arguments;
+
+    // MaterialApp 组件是作为根组件来使用的
+    // Scaffold 组件修饰，可设置导航栏
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(args),
       ),
+      body: HomeContent(),
     );
   }
 }
@@ -34,18 +36,17 @@ class HomeContent extends StatelessWidget {
     // TODO: implement build
     return Center(
       child: Stack(
-
-        alignment: Alignment.center,  // 同时设置 Stack 组件内所有子元素的位置
+        alignment: Alignment.center, // 同时设置 Stack 组件内所有子元素的位置
         children: <Widget>[
           Container(
             width: 300,
             height: 400,
             color: Colors.red,
           ),
-          Text('我是一个文本', style: TextStyle(
-            fontSize: 40,
-            color: Colors.white
-          ),),
+          Text(
+            '我是一个文本',
+            style: TextStyle(fontSize: 40, color: Colors.white),
+          ),
         ],
       ),
     );

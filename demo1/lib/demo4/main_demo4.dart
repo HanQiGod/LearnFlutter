@@ -1,23 +1,25 @@
 import 'package:flutter/material.dart';
 
 // 入口方法
-void main() {
-  runApp(MyApp());
-}
+// void main() {
+//   runApp(MyApp());
+// }
 
 // 自定义组件 -- 抽离
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
+
+    // 获取路由参数  
+    var args = ModalRoute.of(context).settings.arguments;
+
     // TODO: implement build
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
-          title: Text('flutter demo'),
+          title: Text(args),
         ),
         body: HomeContent(),
-      ),
-    );
+      );
   }
 }
 

@@ -15,20 +15,23 @@ import 'package:flutter/material.dart';
 
 //  展示 ListView 的简单使用
 
-void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return MaterialApp(
-      home: Scaffold(
+
+    // 获取路由参数  
+    var args = ModalRoute.of(context).settings.arguments;
+
+    // MaterialApp 组件是作为根组件来使用的
+    // Scaffold 组件修饰，可设置导航栏
+    return Scaffold(
         appBar: AppBar(
-          title: Text('FlutterDemo'),
+          title: Text(args),
         ),
         body: HomeContent(),
-      ),
-    );
+      );
   }
 }
 

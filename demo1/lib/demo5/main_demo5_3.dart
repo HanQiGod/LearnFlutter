@@ -10,7 +10,7 @@ import 'package:flutter/material.dart';
 
 
 // 入口方法
-void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
 
 
 // 自定义组件
@@ -19,19 +19,18 @@ class MyApp extends StatelessWidget {
   // Widget 是部件或组件，在 Flutter 中所有的东西都是组件,比如 Center、Text 都是 Widget
   @override
   Widget build(BuildContext context) {
+
+    // 获取路由参数  
+    var args = ModalRoute.of(context).settings.arguments;
+
     // MaterialApp 组件是作为根组件来使用的
     // Scaffold 组件修饰，可设置导航栏
-    return MaterialApp(
-      home: Scaffold(
+    return Scaffold(
         appBar: AppBar(
-          title: Text('Flutter Demo'),
+          title: Text(args),
         ),
         body: HomeContent(),
-      ),
-      theme: ThemeData(
-        primarySwatch: Colors.blue,
-      ),
-    );
+      );
   }
 }
 

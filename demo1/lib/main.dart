@@ -1,53 +1,57 @@
+import 'package:demo1/res/Routers.dart';
 import 'package:flutter/material.dart';
+
+import 'res/catalogData.dart';
 
 /**
  * 
- * Flutter 页面布局 Stack 层叠组件，Stack 与 Align，Stack 与 Positioned 实现定位布局
+ * Flutter 学习笔记目录
  * 
- * Stack 组件主要是定位布局
+ * 根视图文件
  * 
  *  */
 
-//  布局组件例子练习
-
+// 入口方法
 void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
+    
+    // MaterialApp 组件是作为根组件来使用的   
+    // Scaffold 组件修饰，可设置导航栏
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('FlutterDemo'),
+          title: Text('Flutter 学习笔记目录'),
         ),
         body: HomeContent(),
       ),
+      //注册路由表
+      routes: mainRouters,
     );
   }
 }
 
-//  布局组件例子练习
+//  自定义组件
 class HomeContent extends StatelessWidget {
+  // 自定义方法
+  Widget _getListData(context, index) {
+    return ListTile(
+      title: Text(catalogListData[index]['title']),
+      onTap: () {
+        // item 点击事件 ,并传值
+        Navigator.pushNamed(context, 'nextMain', arguments: catalogListData[index]);
+      },
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     // TODO: implement build
-    return Center(
-      child: Stack(
-
-        alignment: Alignment(1, 1),  // 同时设置 Stack 组件内所有子元素的位置
-        children: <Widget>[
-          Container(
-            width: 300,
-            height: 400,
-            color: Colors.red,
-          ),
-          Text('我是一个文本', style: TextStyle(
-            fontSize: 20,
-            color: Colors.white
-          ),),
-        ],
-      ),
+    return ListView.builder(
+      itemCount: catalogListData.length,
+      itemBuilder: this._getListData,
     );
   }
 }

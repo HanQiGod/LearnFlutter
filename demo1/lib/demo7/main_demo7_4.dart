@@ -18,20 +18,23 @@ import '../res/listData.dart'; // 引入外部数据
 
 //  通过 GridView.builder 实现网格布局（类似 ListView.builder 实现动态网格）
 
-void main() => runApp(MyApp());
+// void main() => runApp(MyApp());
 
 class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    // TODO: implement build
-    return MaterialApp(
-      home: Scaffold(
+
+    // 获取路由参数  
+    var args = ModalRoute.of(context).settings.arguments;
+
+    // MaterialApp 组件是作为根组件来使用的
+    // Scaffold 组件修饰，可设置导航栏
+    return Scaffold(
         appBar: AppBar(
-          title: Text('FlutterDemo'),
+          title: Text(args),
         ),
         body: HomeContent(),
-      ),
-    );
+      );
   }
 }
 
