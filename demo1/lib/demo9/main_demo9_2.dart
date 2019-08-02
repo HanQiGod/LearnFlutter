@@ -8,7 +8,7 @@ import 'package:flutter/material.dart';
  * 
  *  */
 
-//  布局组件例子练习
+//  布局组件例子练习 - 使用单个 Stack 组件布局
 
 // void main() => runApp(MyApp());
 
@@ -29,7 +29,8 @@ class MyApp extends StatelessWidget {
   }
 }
 
-//  布局组件例子练习
+//  布局组件例子练习 - 使用单个 Stack 组件布局
+
 class HomeContent extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

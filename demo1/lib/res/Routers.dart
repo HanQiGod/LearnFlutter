@@ -39,7 +39,28 @@ import 'package:demo1/demo8/main_demo8_6.dart' as main_demo8_6;
 import 'package:demo1/demo8/main_demo8_7.dart' as main_demo8_7;
 
 import 'package:demo1/demo9/main_demo9_1.dart' as main_demo9_1;
-import 'package:demo1/demo9/main_demo9_1.dart' as main_demo9_2;
+import 'package:demo1/demo9/main_demo9_2.dart' as main_demo9_2;
+import 'package:demo1/demo9/main_dem09_3.dart' as main_demo9_3;
+import 'package:demo1/demo9/main_demo9_4.dart' as main_demo9_4;
+import 'package:demo1/demo9/main_demo9_5.dart' as main_demo9_5;
+
+import 'package:demo1/demo10/main_demo10_1.dart' as main_demo10_1;
+import 'package:demo1/demo10/main_demo10_2.dart' as main_demo10_2;
+import 'package:demo1/demo10/main_demo10_3.dart' as main_demo10_3;
+import 'package:demo1/demo10/main_demo10_4.dart' as main_demo10_4;
+import 'package:demo1/demo10/main_demo10_5.dart' as main_demo10_5;
+
+import 'package:demo1/demo11/main_demo11_1.dart' as main_demo11_1;
+import 'package:demo1/demo11/main_demo11_2.dart' as main_demo11_2;
+
+import 'package:demo1/demo12/main_demo12_1.dart' as main_demo12_1;
+import 'package:demo1/demo12/main_demo12_2.dart' as main_demo12_2;
+import 'package:demo1/demo12/main_demo12_3.dart' as main_demo12_3;
+
+import 'package:demo1/demo13/main_demo13_1.dart' as main_demo13_1;
+import 'package:demo1/demo13/main_demo13_2.dart' as main_demo13_2;
+import 'package:demo1/demo13/main_demo13_3.dart' as main_demo13_3;
+
 
 
 // 注册路由表
@@ -86,5 +107,25 @@ Map<String, WidgetBuilder> mainRouters = {
 
   'main_demo9_1': (context) => main_demo9_1.MyApp(),
   'main_demo9_2': (context) => main_demo9_2.MyApp(),
+  'main_demo9_3': (context) => main_demo9_3.MyApp(),
+  'main_demo9_4': (context) => main_demo9_4.MyApp(),
+  'main_demo9_5': (context) => main_demo9_5.MyApp(),
+
+  'main_demo10_1': (context) => main_demo10_1.MyApp(),
+  'main_demo10_2': (context) => main_demo10_2.MyApp(),
+  'main_demo10_3': (context) => main_demo10_3.MyApp(),
+  'main_demo10_4': (context) => main_demo10_4.MyApp(),
+  'main_demo10_5': (context) => main_demo10_5.MyApp(),
+
+  'main_demo11_1': (context) => main_demo11_1.MyApp(),
+  'main_demo11_2': (context) => main_demo11_2.MyApp(),
+
+  'main_demo12_1': (context) => main_demo12_1.MyApp(),
+  'main_demo12_2': (context) => main_demo12_2.MyApp(),
+  'main_demo12_3': (context) => main_demo12_3.MyApp(),
+
+  'main_demo13_1': (context) => main_demo13_1.MyApp(),
+  'main_demo13_2': (context) => main_demo13_2.MyApp(),
+  'main_demo13_3': (context) => main_demo13_3.MyApp(),
 
 };
