@@ -11,7 +11,7 @@
 &emsp;&emsp;由于谷歌的推广，以及国内阿里的闲鱼 App 是 `Flutter` 开发的。所以 Flutter 目前(2019年5月22)关注度非常高的框架。所以非常有必要学习。因为大家都在学，我们不学是不是就有点 Out 了。但是我们要知道的一点就是 Flutter 还比较年轻，相比 lonic、以及 RN 这样的老框架来说社区不是特别完善。还有就是学习成本高。希望未来社区能更加完善、学习成本
 更低。
 
-![效果图](https://github.com/HanQiGod/LearnFlutter/blob/master/LearnFlutter/flutter.gif)
+![效果图](https://github.com/HanQiGod/LearnFlutter/blob/master/demo1/flutter.gif)
 
 
 #### 学习目录（demo1/lib/）
