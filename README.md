@@ -68,12 +68,10 @@
  - Wrap 组件    
  - Wrap 组件实现流布局列表
 
-##### Demo13 - Flutter StatefulWidget 有状态组件 、页面上绑定数据、改变页面数据 、实现计数器功能 动态列表
+##### Demo13 - Flutter StatefulWidget 有状态组件 、页面上绑定数据、改变页面数据 、实现计数器功能 动态列表，BottomNavigationBar 自定义底部导航条以及实现页面切换
 
  - Flutter 中自定义有状态组件
  - Flutter 中状态管理 实现计数器功能
  - Flutter 状态管理 实现动态列表
-
-##### Demo14 - Flutter BottomNavigationBar 自定义底部导航条以及实现页面切换
-
- - Flutter 中自定义有状态组件
+ - Flutter BottomNavigationBar 自定义底部导航条
+ -  Flutter 底部导航条页面切换
