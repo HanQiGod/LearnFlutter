@@ -6,14 +6,19 @@ import 'package:flutter/material.dart';
 // 将 Tabs 抽离出来
 
 class Taps extends StatefulWidget {
-  Taps({Key key}) : super(key: key);
 
-  _TapsState createState() => _TapsState();
+  final index;
+  Taps({Key key,this.index = 0}) : super(key: key);
+
+  _TapsState createState() => _TapsState(this.index);
 }
 
 class _TapsState extends State<Taps> {
 
-  int _currentIndex = 0;
+  int _currentIndex;
+  _TapsState(index) {
+    this._currentIndex = index;
+  }
   List<Widget> _pageList = [
     HomePage(),
     CategoryPage(),
@@ -32,12 +37,15 @@ class _TapsState extends State<Taps> {
         ),
         body: this._pageList[this._currentIndex],
         bottomNavigationBar: BottomNavigationBar(
-          currentIndex: this._currentIndex,
+          currentIndex: this._currentIndex, // 配置对应选中的索引值
           onTap: (int index) {
-            setState(() {
+            setState(() { // 改变状态 
               this._currentIndex = index;
             });
           },
+          iconSize: 36.0, // icon 的大小
+          fixedColor: Colors.red, // 选中 bar 的颜色
+          type: BottomNavigationBarType.fixed, // 如果 bar 大于 4 个就要自适应，配置可以有多个按钮
           items: [
             BottomNavigationBarItem(
               icon: Icon(Icons.home),

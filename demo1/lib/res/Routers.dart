@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+
 import '../nextMain.dart' as nextMain; // 二级页面
 
 import 'package:demo1/demo1/main_demo1.dart' as main_demo1;
@@ -61,11 +62,18 @@ import 'package:demo1/demo13/main_demo13_1.dart' as main_demo13_1;
 import 'package:demo1/demo13/main_demo13_2.dart' as main_demo13_2;
 import 'package:demo1/demo13/main_demo13_3.dart' as main_demo13_3;
 
+import '../demo14/main_demo14_1.dart' as main_demo14_1;
+import '../demo14/main_demo14_2.dart' as main_demo14_2;
+import '../demo14/main_demo14_3.dart' as main_demo14_3;
+
+import '../demo15/main_demo15_1.dart' as main_demo15_1;
+
+
 
 
 // 注册路由表
 Map<String, WidgetBuilder> mainRouters = {
-
+  
   'nextMain': (context) => nextMain.MyApp(),
 
   'main_demo1': (context) => main_demo1.MyApp(),
@@ -127,5 +135,11 @@ Map<String, WidgetBuilder> mainRouters = {
   'main_demo13_1': (context) => main_demo13_1.MyApp(),
   'main_demo13_2': (context) => main_demo13_2.MyApp(),
   'main_demo13_3': (context) => main_demo13_3.MyApp(),
+
+  'main_demo14_1': (context) => main_demo14_1.MyApp(),
+  'main_demo14_2': (context) => main_demo14_2.MyApp(),
+  'main_demo14_3': (context) => main_demo14_3.MyApp(),
+
+  'main_demo15_1': (context) => main_demo15_1.MyApp(),
 
 };

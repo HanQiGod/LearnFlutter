@@ -22,6 +22,19 @@ class _SettingsPageState extends State<SettingsPage> {
         ),
         ListTile(
           title: Text('我的优惠券'),
+        ),
+
+        RaisedButton(
+          child: Text('跳转到登录页面'),
+          onPressed: (){
+            Navigator.pushNamed(context, '/login');
+          },
+        ),
+        RaisedButton(
+          child: Text('跳转到注册页面'),
+          onPressed: (){
+            Navigator.pushNamed(context, '/registerFirst');
+          },
         )
       ],
     );
