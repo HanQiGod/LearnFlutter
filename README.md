@@ -75,3 +75,18 @@
  - Flutter 状态管理 实现动态列表
  - Flutter BottomNavigationBar 自定义底部导航条
  -  Flutter 底部导航条页面切换
+
+##### Demo14 - Flutter中的路由 普通路由、普通路由传值、命名路由、命名路由传值
+
+ - Flutter 中的普通路由
+ -  Flutter 中的基本路由使用  
+ - Flutter 中的基本路由跳转传值    
+ -  Flutter 中的命名路由    
+ - Flutter 中的命名路由跳转传值
+
+##### Demo15 - Flutter中的路由 pushReplacementNamed路由替换 、pushNamedAndRemoveUntil返回到根路由
+
+ - Flutter 中返回到上一级页面
+ -  Flutter 中替换路由 
+ - Flutter 中路由替换实现多级路由 返回到根路由   
+ -  Flutter pushNamedAndRemoveUntil 返回到根路由
