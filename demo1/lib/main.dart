@@ -36,7 +36,7 @@ class MyApp extends StatelessWidget {
 //  自定义组件
 class HomeContent extends StatelessWidget {
   // 自定义方法
-  Widget _getListData(context, index) {
+  Widget _getListData(context, index) { 
     return ListTile(
       title: Text(catalogListData[index]['title']),
       onTap: () {
