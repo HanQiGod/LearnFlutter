@@ -90,3 +90,30 @@
  -  Flutter 中替换路由 
  - Flutter 中路由替换实现多级路由 返回到根路由   
  -  Flutter pushNamedAndRemoveUntil 返回到根路由
+ ##### Demo16 - Flutter 自定义 AppBar 定义顶部 Tab 切换，底部 Tab 结合顶部Tab 实现类似头条页面布局
+
+ - Flutter AppBar 自定义顶部按钮图标、颜色
+ - Flutter AppBar 中自定义 TabBar 实现顶部 Tab 切换 
+ - Flutter 把 TabBar 放在导航最顶部    
+ - Flutter AppBar 中自定义TabBar实现 Tabs 的另一种方法。
+
+##### Demo17 - Flutter 中通过 TabController 定义顶部 tab 切换，介绍生命周期函数
+
+ - Flutter AppBar 自定义顶部按钮图标、颜色
+ -  Flutter AppBar 中自定义 TabBar 实现顶部 Tab 切换    
+ - Flutter 把 TabBar 放在导航最顶部    
+ - Flutter AppBar 中自定义 TabBar 实现Tabs的另一种方法 TabController
+
+##### Demo18 - Flutter Drawer 侧边栏、DrawerHeader、 UserAccountsDrawerHeader 以及侧边栏内容布局
+ - Flutter Drawer 侧边栏
+ -  Flutter DrawerHeader    
+ -  Flutter UserAccountsDrawerHeader    
+ - Flutter 侧边栏路由跳转    
+##### Demo19 - Flutter 中的按钮组件 RaisedButton、FlatButton、OutlineButton、IconButton、ButtonBar 以及自定义按钮组件
+ - Flutter 中的按钮组件介绍
+ - Flutter 按钮组件中的一些属性  
+ - RaisedButton
+ - Flutter FlatButton
+ - Flutter OutlineButton
+ -  Flutter IconButton
+ - Flutter ButtonBar
