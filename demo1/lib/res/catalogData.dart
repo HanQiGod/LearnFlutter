@@ -125,4 +125,40 @@ List catalogListData = [
         'main_demo15_1',
       ],
     },
+
+
+
+    {
+      'title':'demo16 - Flutter 自定义 AppBar 定义顶部 Tab 切换、底部 Tab 结合顶部 Tab 实现类似头条页面布局',
+      'list':[
+        'main_demo16_1',
+        'main_demo16_2',
+      ],
+    },
+    {
+      'title':'demo17 - Flutter 中通过 TabController 定义顶部tab切换、介绍生命周期函数',
+      'list':[
+        'main_demo17_1',
+      ],
+    },
+    {
+      'title':'demo18 - Flutter Drawer 侧边栏、DrawerHeader、UserAccountsDrawerHeader 以及侧边栏内容布局',
+      'list':[
+        'main_demo18_1',
+      ],
+    },
+    {
+      'title':'demo19 - Flutter 中的按钮组件 RaisedButton、FlatButton、OutlineButton、IconButton、ButtonBar 以及自定义按钮组件',
+      'list':[
+        'main_demo19_1',
+      ],
+    },
+    {
+      'title':'demo20 - Flutter 中的表单 TextField 单行文本框、多行文本框 CheckBox、CheckboxListTile',
+      'list':[
+        'main_demo20_1',
+        'main_demo20_2',
+        'main_demo20_3',
+      ],
+    },
   ];

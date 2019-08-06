@@ -68,7 +68,18 @@ import '../demo14/main_demo14_3.dart' as main_demo14_3;
 
 import '../demo15/main_demo15_1.dart' as main_demo15_1;
 
+import '../demo16/main_demo16_1.dart' as main_demo16_1;
+import '../demo16/main_demo16_2.dart' as main_demo16_2;
 
+import '../demo17/main_demo17_1.dart' as main_demo17_1;
+
+import '../demo18/main_demo18_1.dart' as main_demo18_1;
+
+import '../demo19/main_demo19_1.dart' as main_demo19_1;
+
+import '../demo20/main_demo20_1.dart' as main_demo20_1;
+import '../demo20/main_demo20_2.dart' as main_demo20_2;
+import '../demo20/main_demo20_3.dart' as main_demo20_3;
 
 
 // 注册路由表
@@ -141,5 +152,19 @@ Map<String, WidgetBuilder> mainRouters = {
   'main_demo14_3': (context) => main_demo14_3.MyApp(),
 
   'main_demo15_1': (context) => main_demo15_1.MyApp(),
+
+  'main_demo16_1': (context) => main_demo16_1.MyApp(),
+  'main_demo16_2': (context) => main_demo16_2.MyApp(),
+
+  'main_demo17_1': (context) => main_demo17_1.MyApp(),
+
+  'main_demo18_1': (context) => main_demo18_1.MyApp(),
+
+  'main_demo19_1': (context) => main_demo19_1.MyApp(),
+
+  'main_demo20_1': (context) => main_demo20_1.MyApp(),
+  'main_demo20_2': (context) => main_demo20_2.MyApp(),
+  'main_demo20_3': (context) => main_demo20_3.MyApp(),
+
 
 };

@@ -13,6 +13,18 @@ import '../user/registerFirst.dart';
 import '../user/registerSecond.dart';
 import '../user/registerThird.dart';
 
+import 'package:demo1/demo16/appbarDemo.dart';
+
+import 'package:demo1/demo17/tabBarController.dart';
+
+import 'package:demo1/demo18/user.dart';
+
+import 'package:demo1/demo19/buttonDemo.dart';
+
+import 'package:demo1/demo20/checkBox.dart';
+import 'package:demo1/demo20/radio.dart';
+import 'package:demo1/demo20/textField.dart';
+
 
 // 注册路由表
 Map<String, WidgetBuilder> routers = {
@@ -27,5 +39,17 @@ Map<String, WidgetBuilder> routers = {
   '/registerFirst': (context) => ResgisterFirstPage(),
   '/registerSecond': (context) => RegisterSecondPage(),
   '/registerThird': (context) => RegisterThirdPage(),
+
+  '/appbarDemo': (context) => AppBarDemoPage(),
+
+  '/tabBarController': (context) => TabBarControllerPage(),
+
+  '/user': (context) => UserPage(),
+
+  '/buttonDemo': (context) => ButtonDemoPage(),
+
+  '/textFieldDemo': (context) => TextFieldDemoPage(),
+  '/radioDemo': (context) => RadioDemoPage(),
+  '/checkBoxDemo': (context) => CheckBoxDemoPage(),
 
 };

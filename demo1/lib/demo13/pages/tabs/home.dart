@@ -41,6 +41,76 @@ class _HomePageState extends State<HomePage> {
           onPressed: (){
             Navigator.pushNamed(context, '/product');
           },
+        ),
+        SizedBox(height: 20,),
+        RaisedButton(
+          child: Text('跳转到 AppBar'),
+          color: Theme.of(context).accentColor,
+          textTheme: ButtonTextTheme.primary,
+          onPressed: (){
+            // 路有跳转
+            Navigator.pushNamed(context, '/appbarDemo');
+          },
+        ),
+        SizedBox(height: 20,),
+        RaisedButton(
+          child: Text('跳转到 TabBarController'),
+          color: Theme.of(context).accentColor,
+          textTheme: ButtonTextTheme.primary,
+          onPressed: (){
+            // 路有跳转
+            Navigator.pushNamed(context, '/tabBarController');
+          },
+        ),
+        SizedBox(height: 20,),
+        RaisedButton(
+          child: Text('点击跳转到按钮演示页面'),
+          color: Theme.of(context).accentColor,
+          textTheme: ButtonTextTheme.primary,
+          onPressed: (){
+            // 路有跳转
+            Navigator.pushNamed(context, '/buttonDemo');
+          },
+        ),
+        SizedBox(height: 5,),
+        RaisedButton(
+          child: Text('按钮演示页面'),
+          color: Theme.of(context).accentColor,
+          textTheme: ButtonTextTheme.primary,
+          onPressed: (){
+            // 路有跳转
+            Navigator.pushNamed(context, '/buttonDemo');
+          },
+        ),
+        SizedBox(height: 5,),
+        RaisedButton(
+          child: Text('表单演示页面'),
+          color: Theme.of(context).accentColor,
+          textTheme: ButtonTextTheme.primary,
+          onPressed: (){
+            // 路有跳转
+            Navigator.pushNamed(context, '/textFieldDemo');
+          },
+        ),
+        SizedBox(height: 5,),
+        RaisedButton(
+          child: Text('CheckBox'),
+          color: Theme.of(context).accentColor,
+          textTheme: ButtonTextTheme.primary,
+          onPressed: (){
+            // 路有跳转
+            Navigator.pushNamed(context, '/checkBoxDemo');
+          },
+        ),
+        SizedBox(height: 5,),
+        RaisedButton(
+          child: Text('RadioDemo'),
+          color: Theme.of(context).accentColor,
+          textTheme: ButtonTextTheme.primary,
+          onPressed: (){
+            // 路有跳转
+            Navigator.pushNamed(context, '/radioDemo');
+          },
         )
         
       ],
