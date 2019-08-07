@@ -33,7 +33,7 @@ class _HomePageState extends State<HomePage> {
 
           },
         ),
-        SizedBox(height: 20,),
+        SizedBox(height: 5,),
         RaisedButton(
           child: Text('跳转商品页面'),
           color: Theme.of(context).accentColor,
@@ -42,7 +42,7 @@ class _HomePageState extends State<HomePage> {
             Navigator.pushNamed(context, '/product');
           },
         ),
-        SizedBox(height: 20,),
+        SizedBox(height: 5,),
         RaisedButton(
           child: Text('跳转到 AppBar'),
           color: Theme.of(context).accentColor,
@@ -52,7 +52,7 @@ class _HomePageState extends State<HomePage> {
             Navigator.pushNamed(context, '/appbarDemo');
           },
         ),
-        SizedBox(height: 20,),
+        SizedBox(height: 5,),
         RaisedButton(
           child: Text('跳转到 TabBarController'),
           color: Theme.of(context).accentColor,
@@ -62,7 +62,7 @@ class _HomePageState extends State<HomePage> {
             Navigator.pushNamed(context, '/tabBarController');
           },
         ),
-        SizedBox(height: 20,),
+        SizedBox(height: 5,),
         RaisedButton(
           child: Text('点击跳转到按钮演示页面'),
           color: Theme.of(context).accentColor,
@@ -110,6 +110,34 @@ class _HomePageState extends State<HomePage> {
           onPressed: (){
             // 路有跳转
             Navigator.pushNamed(context, '/radioDemo');
+          },
+        ),
+        SizedBox(height: 5,),
+        RaisedButton(
+          child: Text('完善个人信息'),
+          color: Theme.of(context).accentColor,
+          textTheme: ButtonTextTheme.primary,
+          onPressed: (){
+            // 路有跳转
+            Navigator.pushNamed(context, '/formDemo');
+          },
+        ),
+        SizedBox(height: 5,),
+        RaisedButton(
+          child: Text('跳转到日期演示页面'),
+          color: Colors.blue,
+          textColor: Colors.white,
+          onPressed: (){
+            Navigator.pushNamed(context, '/datePicker');
+          },
+        ),
+        SizedBox(height: 5,),
+        RaisedButton(
+          child: Text('第三方日期插件的使用'),
+          color: Colors.blue,
+          textColor: Colors.white,
+          onPressed: (){
+            Navigator.pushNamed(context, '/datePickerPub');
           },
         )
         

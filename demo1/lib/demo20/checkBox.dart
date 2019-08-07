@@ -61,6 +61,7 @@ class _CheckBoxDemoPageState extends State<CheckBoxDemoPage> {
             title: Text('标题'),
             subtitle: Text('二级标题'),
             secondary: Icon(Icons.home),
+            selected: this.flag, // 设置选中文字高亮
             onChanged: (value){
               setState(() {
                 this.flag = value;

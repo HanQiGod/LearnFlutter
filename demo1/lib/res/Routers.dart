@@ -80,6 +80,10 @@ import '../demo19/main_demo19_1.dart' as main_demo19_1;
 import '../demo20/main_demo20_1.dart' as main_demo20_1;
 import '../demo20/main_demo20_2.dart' as main_demo20_2;
 import '../demo20/main_demo20_3.dart' as main_demo20_3;
+import '../demo20/main_demo20_4.dart' as main_demo20_4;
+import '../demo20/main_demo20_5.dart' as main_demo20_5;
+
+import '../demo21/main_demo21_1.dart' as main_demo21_1;
 
 
 // 注册路由表
@@ -165,6 +169,10 @@ Map<String, WidgetBuilder> mainRouters = {
   'main_demo20_1': (context) => main_demo20_1.MyApp(),
   'main_demo20_2': (context) => main_demo20_2.MyApp(),
   'main_demo20_3': (context) => main_demo20_3.MyApp(),
+  'main_demo20_4': (context) => main_demo20_4.MyApp(),
+  'main_demo20_5': (context) => main_demo20_5.MyApp(),
+
+  'main_demo21_1': (context) => main_demo21_1.MyApp(),
 
 
 };

@@ -25,6 +25,11 @@ import 'package:demo1/demo20/checkBox.dart';
 import 'package:demo1/demo20/radio.dart';
 import 'package:demo1/demo20/textField.dart';
 
+import 'package:demo1/demo20/formDemo.dart';
+
+import 'package:demo1/demo21/datePicker.dart';
+import 'package:demo1/demo21/datePickerPub.dart';
+
 
 // 注册路由表
 Map<String, WidgetBuilder> routers = {
@@ -51,5 +56,9 @@ Map<String, WidgetBuilder> routers = {
   '/textFieldDemo': (context) => TextFieldDemoPage(),
   '/radioDemo': (context) => RadioDemoPage(),
   '/checkBoxDemo': (context) => CheckBoxDemoPage(),
+  '/formDemo': (context) => FormDemoPage(),
+
+  '/datePicker': (context) => DatePickerPage(),
+  '/datePickerPub': (context) => DatePickerPubPage(),
 
 };
